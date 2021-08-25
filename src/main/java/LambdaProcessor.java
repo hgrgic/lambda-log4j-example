@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class LambdaProcessor implements RequestHandler<MessageWrapper, MessageWrapper> {
-	public MessageWrapper handleRequest(MessageWrapper xml, Context context) {
+	public MessageWrapper handleRequest(MessageWrapper message, Context context) {
 		log.info("Info - Log from Slf4J");
 		log.warn("Warn - Log from Slf4J");
 
